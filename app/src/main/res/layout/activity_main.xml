@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Praktikum 1"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="162dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="258dp"
+            android:layout_height="65dp"
+            android:max="1000000"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="484dp" />
+
+        <TextView
+            android:id="@+id/seekText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            tools:layout_editor_absoluteX="193dp"
+            tools:layout_editor_absoluteY="566dp" />
+
+        <Switch
+            android:id="@+id/gpsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="GPS"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <TextView
+            android:id="@+id/gpsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <Switch
+            android:id="@+id/accelSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Accel."
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+        <TextView
+            android:id="@+id/accelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <Switch
+            android:id="@+id/gyroSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Gyroskop"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="373dp" />
+
+        <TextView
+            android:id="@+id/gyroText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyroskop"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <Switch
+            android:id="@+id/lichtSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Licht"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <TextView
+            android:id="@+id/lichtText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licht"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
